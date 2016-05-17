@@ -33,7 +33,9 @@ def update
     
   else
     render :edit
-end
+  end
+  
+
 end
 
 
@@ -42,7 +44,7 @@ end
 
 private 
 def recipe_params
-  params.require(:recipe).permit(:name, :summery, :description)
+  params.require(:recipe).permit(:name, :summery, :description, :picture)
 end
 end
 
